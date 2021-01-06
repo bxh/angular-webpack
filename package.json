@@ -1,0 +1,35 @@
+{
+  "name": "angularjs-webpack",
+  "version": "1.0.0",
+  "description": "A reference project for using Webpack with angular JS (1.5+)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "rimraf dist && webpack serve --config webpack.dev.config.js --hot",
+    "build": "rimraf dist && webpack --config webpack.prod.config.js"
+  },
+  "author": "bxh",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.1",
+    "html-loader": "^1.3.2",
+    "html-webpack-plugin": "^4.5.1",
+    "mini-css-extract-plugin": "^1.3.3",
+    "rimraf": "^3.0.2",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.0.3",
+    "testem": "^3.2.0",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1"
+  },
+  "dependencies": {
+    "angular": "^1.8.2",
+    "core-js": "^3.8.2",
+    "moment": "^2.29.1"
+  }
+}

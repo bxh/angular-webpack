@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta http-equiv="X-UA-compatible" content="ie=edge">
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.js" integrity="sha512-rCVQBDU9Ny0aKLo1/B1MqgRjWEMlCL3WJ0DD6mJeK6qMZqpN9JCRxPtMQWWR9XWCMFIqlSgT4uOdwpvxWTSejw==" crossorigin="anonymous"></script> -->
+</head>
+<body ng-app="heroApp">
+	<div ng-controller="mainCtrl as ctrl">
+		<h3>Heroes</h3>
+		<div ng-repeat="hero in ctrl.heroes">
+			<hero-detail hero="hero"></hero-detail>
+		</div>
+		<div>{{ctrl.time()}}</div>
+	</div>
+</body>
+</html>
